@@ -49,7 +49,9 @@ pip install whoop-data pandas
 curl -O https://raw.githubusercontent.com/tugcetasci22/click-sync/main/whoop_pull.py
 
 python whoop_pull.py --label yourname          # per-minute, last 7 days
-# python whoop_pull.py --label yourname --step 6   # finer (6-second) sampling
+# python whoop_pull.py --label yourname --step 6                          # finer (6-second) sampling
+# python whoop_pull.py --label yourname --days 14                         # last N days
+# python whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-12   # a specific date range (inclusive)
 ```
 It prompts for your Whoop email + password (hidden), then writes `whoop_hr_yourname.csv`.
 Send that file back + fill the survey (links below). Done.
