@@ -46,7 +46,7 @@ Install. Then open **Command Prompt** (press `Start`, type `cmd`, hit Enter).
 pip install whoop-data pandas
 
 # download the script (or git clone this repo)
-curl -O https://raw.githubusercontent.com/<YOUR_GITHUB_USERNAME>/click-sync/main/whoop_pull.py
+curl -O https://raw.githubusercontent.com/tugcetasci22/click-sync/main/whoop_pull.py
 
 python whoop_pull.py --label yourname          # per-minute, last 7 days
 # python whoop_pull.py --label yourname --step 6   # finer (6-second) sampling
