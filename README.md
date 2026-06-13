@@ -1,4 +1,4 @@
-# Click-Sync 🫀
+# Heart-Sync 🫀
 
 **Do the hearts of people who "click" beat in sync?**
 
