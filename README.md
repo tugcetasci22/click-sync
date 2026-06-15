@@ -17,8 +17,10 @@ up. You log in with your own Whoop account — **nobody ever sees your password.
 
 1. Get Python (one-time, ~2 min)
 2. Get the script (download **or** copy-paste)
-3. Run it — it asks for your Whoop email + password, then saves a `.csv`
-4. Send back the `.csv` + fill the 2-minute survey
+3. Run it for **June 1–14** — it asks for your Whoop email + password, then saves a `.csv`
+4. Send the `.csv` file back to me
+
+> 📅 **For this beta, please pull the first two weeks of June: June 1 through June 14.**
 
 Pick **Track A** if you're comfortable in a terminal, **Track B** if you've never opened one.
 
@@ -48,13 +50,13 @@ pip install whoop-data pandas
 # download the script (or git clone this repo)
 curl -O https://raw.githubusercontent.com/tugcetasci22/click-sync/main/whoop_pull.py
 
-python whoop_pull.py --label yourname          # per-minute, last 7 days
-# python whoop_pull.py --label yourname --step 6                          # finer (6-second) sampling
-# python whoop_pull.py --label yourname --days 14                         # last N days
-# python whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-12   # a specific date range (inclusive)
+# 👇 For this beta, pull the FIRST TWO WEEKS OF JUNE (June 1–14):
+python whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-14
+# (optional) finer 6-second sampling instead of per-minute:
+# python whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-14 --step 6
 ```
 It prompts for your Whoop email + password (hidden), then writes `whoop_hr_yourname.csv`.
-Send that file back + fill the survey (links below). Done.
+Send that file back to me. Done.
 
 ---
 
@@ -89,10 +91,10 @@ cd Downloads
 Wait for it to finish (a wall of text scrolling is normal).
 
 ### Step 5 — Run it
-- **Mac:** `python3 whoop_pull.py --label yourname`
-- **Windows:** `python whoop_pull.py --label yourname`
+- **Mac:** `python3 whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-14`
+- **Windows:** `python whoop_pull.py --label yourname --start 2026-06-01 --end 2026-06-14`
 
-Replace `yourname` with your actual name (no spaces). It will ask:
+Replace `yourname` with your actual name (no spaces). This pulls the **first two weeks of June**. It will ask:
 ```
 Whoop email:
 Whoop password (hidden as you type):
@@ -107,11 +109,8 @@ Look in your **Downloads** folder for **`whoop_hr_yourname.csv`**. That's the on
 
 ## 📤 Send your data back
 
-1. **Upload your `whoop_hr_yourname.csv`** here: **[👉 UPLOAD LINK — replace me]**
-2. **Fill the 2-minute survey** here: **[👉 SURVEY LINK — replace me]**
-   (who you paired with, when you were together, and how much you feel you click — 1 to 7)
-
-Both people in a pair should upload their own file and fill their own survey.
+Just **send your `whoop_hr_yourname.csv` file back to me** — reply wherever I sent you this
+(email or DM) and attach the file. That's it for now; thanks for helping me test this! 🙏
 
 ---
 
